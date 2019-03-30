@@ -14,7 +14,6 @@ def test_tag_synonyms_api_schema():
     response = stockExchange.get_tag_synonyms()
     assert response.status_code == 200
     response = json.loads(response.text)
-    print(response)
     tag_schema_validator(response)
 
 

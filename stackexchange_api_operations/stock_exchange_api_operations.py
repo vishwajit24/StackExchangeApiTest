@@ -127,5 +127,3 @@ class StockExchangeAPIOperations(object):
             logger.error("Error occurred while getting the pet entry %r" % e)
             raise e
 
-
-StockExchangeAPIOperations().get_tags()
