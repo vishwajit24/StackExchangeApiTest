@@ -1,4 +1,4 @@
-This project contains the calls for 5 APIs for stackoverflow.
+This project contains the calls for 5 APIs for stackoverflow. It uses python2
 The tst folder contains the tests for all the 5 APIs.
 
 This uses the pytest framework for the test to execute.
@@ -18,7 +18,7 @@ chmod +x installer.sh
 2) Run the below command - 
 
 ```applescript
-python -m pytest tst --junitsml=result_file_name.xml
+python2 -m pytest tst --junitsml=result_file_name.xml
 ```
 
 This will run all the test in tst folder and will generate the result of the test in result_file_name.xml 
@@ -30,7 +30,7 @@ file in the current directory
 2) Run the below command - 
 
 ```applescript
-python -m pytest tst/test_get_tag_info_api -k test_tag_info_api_with_valid_tag_name --junitsml=result_file_name.xml
+python2 -m pytest tst/test_get_tag_info_api -k test_tag_info_api_with_valid_tag_name --junitsml=result_file_name.xml
 ```
 
 ## To Run the test in the CI 
