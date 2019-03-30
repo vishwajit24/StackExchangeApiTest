@@ -2,3 +2,4 @@ pytest_cache
 cache
 stackexchange_api_operations/.pytest_cache
 tst/.pytest_cache
+.idea

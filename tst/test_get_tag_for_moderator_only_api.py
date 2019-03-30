@@ -39,5 +39,5 @@ def test_tag_required_info_with_invalid_site():
     response = stockExchange.get_tag_for_moderator_only(site_name=site_name)
     assert response.status_code == 400
     response = json.loads(response.text)
-    print(response)
+
 

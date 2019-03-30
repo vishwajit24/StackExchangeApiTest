@@ -14,7 +14,6 @@ def test_tag_info():
     response = stockExchange.get_tags()
     assert response.status_code == 200
     response = json.loads(response.text)
-    print(response)
     tag_schema_validator(response)
 
 
