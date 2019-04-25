@@ -14,24 +14,15 @@ chmod +x installer.sh
 
 ##To Run all the tests 
 
-1) Go to the folder of stackexchange
+1) Go to the folder of StackExchangeAPITest/bin
 2) Run the below command - 
 
 ```applescript
-python2 -m pytest tst --junitxml=result_file_name.xml
+python2 run_test.py
 ```
 
-This will run all the test in tst folder and will generate the result of the test in result_file_name.xml 
+This will run all the test in tst folder and will generate the result of the test in result.xml 
 file in the current directory 
-
-## To Run the individual test
-
-1) Go to the folder of stackexchange
-2) Run the below command - 
-
-```applescript
-python2 -m pytest tst/test_get_tag_info_api -k test_tag_info_api_with_valid_tag_name --junitxml=result_file_name.xml
-```
 
 ## To Run the test in the CI 
 Jenkins UserScript

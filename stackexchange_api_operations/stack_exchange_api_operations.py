@@ -4,7 +4,7 @@ import requests
 logging.basicConfig(level=logging.INFO)
 
 
-class StockExchangeAPIOperations(object):
+class StackExchangeAPIOperations(object):
 
     def __init__(self):
         self.url = 'http://api.stackexchange.com/2.2/'
@@ -32,7 +32,7 @@ class StockExchangeAPIOperations(object):
             logger.info("Response content: %r", response.content)
             return response
         except Exception as e:
-            logger.error("Error occurred while getting the pet entry %r" % e)
+            logger.error("Error occurred while getting tags %r" % e)
             raise e
 
     def get_tag_info(self, tag_name, site_name=''):
@@ -55,7 +55,7 @@ class StockExchangeAPIOperations(object):
             logger.info("Response content: %r", response.content)
             return response
         except Exception as e:
-            logger.error("Error occurred while getting the pet entry %r" % e)
+            logger.error("Error occurred while getting the tag info %r" % e)
             raise e
 
     def get_tag_for_moderator_only(self, site_name=''):
@@ -78,7 +78,7 @@ class StockExchangeAPIOperations(object):
             logger.info("Response content: %r", response.content)
             return response
         except Exception as e:
-            logger.error("Error occurred while getting the pet entry %r" % e)
+            logger.error("Error occurred while getting the tag for moderator %r" % e)
             raise e
 
     def get_tag_required(self, site_name=''):
@@ -101,7 +101,7 @@ class StockExchangeAPIOperations(object):
             logger.info("Response content: %r", response.content)
             return response
         except Exception as e:
-            logger.error("Error occurred while getting the pet entry %r" % e)
+            logger.error("Error occurred while getting the tags required %r" % e)
             raise e
 
     def get_tag_synonyms(self, site_name=''):
@@ -124,6 +124,6 @@ class StockExchangeAPIOperations(object):
             logger.info("Response content: %r", response.content)
             return response
         except Exception as e:
-            logger.error("Error occurred while getting the pet entry %r" % e)
+            logger.error("Error occurred while getting the tags for synonyms %r" % e)
             raise e
 
